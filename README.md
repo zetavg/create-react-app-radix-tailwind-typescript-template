@@ -1,6 +1,16 @@
-# Getting Started with Create React App
+# Create React App with TypeScript, Tailwind, and Radix UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![](https://github.com/zetavg/create-react-app-radix-tailwind-typescript-template/assets/3784687/94474f70-2b97-4433-ae36-d73ebb34c6fb)
+
+This is a template project for [Create React App](https://create-react-app.dev/) with [TypeScript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/), and [Radix UI](https://www.radix-ui.com/) (with [shadcn/ui](https://ui.shadcn.com/)).
+
+✅ [CRACO (Create React App Configuration Override)](https://craco.js.org/)
+✅ [Tailwind CSS](https://tailwindcss.com/)
+✅ [Radix UI](https://www.radix-ui.com/) with [shadcn/ui](https://ui.shadcn.com/)
+✅ [TypeScript](https://www.typescriptlang.org/)
+✅ [ESLint](https://eslint.org/) with [Prettier](https://prettier.io/) and [simple-import-sort](https://github.com/lydell/eslint-plugin-simple-import-sort)
+✅ [Jest](https://jestjs.io/) with [Testing Library](https://testing-library.com/)
+✅ Absolute imports with `@/*`
 
 ## Available Scripts
 
@@ -29,18 +39,10 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started). Also, check out [CRACO](https://craco.js.org/docs/) for more possibilities of customizing the configuration of Create React App.
+
+See the documentation of [Tailwind CSS](https://tailwindcss.com/docs), [Radix UI](https://www.radix-ui.com/primitives/docs), and [shadcn/ui](https://ui.shadcn.com/docs/components) on how to use them.
 
 To learn React, check out the [React documentation](https://reactjs.org/).
