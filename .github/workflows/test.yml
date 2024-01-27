@@ -1,0 +1,48 @@
+name: Test
+on:
+  push:
+    branches:
+    - main
+    paths-ignore:
+      - '**/README.md'
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    branches:
+    - main
+    paths-ignore:
+      - '**/README.md'
+  release:
+    types: [published]
+  schedule:
+    # First Sunday of every month
+    # See: https://crontab.guru/#0_0_1-7_*_*/7
+    - cron: '0 0 1-7 * */7'  # https://stackoverflow.com/a/73826599
+    # # Every Monday
+    # - cron: 0 0 * * 1
+
+jobs:
+  test:
+    name: "Test"
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+    - name: Cache node_modules
+      uses: actions/cache@v4
+      env:
+        cache-name: node_modules
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-${{ env.cache-name }}-
+    - name: NPM install
+      run: npm install
+    - name: Lint
+      run: npm run lint
+    - name: Typecheck
+      run: npm run typecheck
+    - name: Test
+      run: FORCE_COLOR=true npm run test -- --verbose
