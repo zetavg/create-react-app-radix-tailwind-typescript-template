@@ -10,6 +10,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['jest', 'simple-import-sort'],
   rules: {
+    'prettier/prettier': 'warn',
     'no-spaced-func': 'off',
     '@typescript-eslint/no-unused-vars': [
       'warn',
