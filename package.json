@@ -45,7 +45,7 @@
     "tailwind-merge": "^2",
     "tailwindcss-animate": "^1",
     "ts-jest": "^29",
-    "typescript": "^4",
+    "typescript": "^5",
     "web-vitals": "^2"
   }
 }
