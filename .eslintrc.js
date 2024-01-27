@@ -1,5 +1,12 @@
 module.exports = {
   root: true,
+  ignorePatterns: [
+    'node_modules/',
+    '**/node_modules/',
+    'out/',
+    'dist/',
+    'build/',
+  ],
   extends: [
     'eslint:recommended',
     'react-app',
