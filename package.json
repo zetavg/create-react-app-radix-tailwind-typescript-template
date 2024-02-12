@@ -37,7 +37,7 @@
     "clsx": "^2",
     "eslint-config-prettier": "^9",
     "eslint-plugin-prettier": "^5",
-    "eslint-plugin-simple-import-sort": "^10",
+    "eslint-plugin-simple-import-sort": "^12",
     "prettier": "^3",
     "react": "^18",
     "react-dom": "^18",
