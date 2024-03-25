@@ -27,7 +27,7 @@
     "@radix-ui/react-icons": "^1",
     "@radix-ui/react-slot": "^1",
     "@testing-library/jest-dom": "^5",
-    "@testing-library/react": "^13",
+    "@testing-library/react": "^14",
     "@testing-library/user-event": "^13",
     "@types/jest": "^27",
     "@types/node": "^16",
